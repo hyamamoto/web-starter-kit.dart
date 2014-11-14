@@ -1,7 +1,7 @@
 import 'package:wsk/wsk.dart';
 import 'package:wsk/routing_utils.dart';
 
-/// Application's main method
+/// Application Main
 void main() {
 
   // Listeners

@@ -19,6 +19,7 @@ library wsk;
 import 'dart:html';
 
 part "src/menubar.dart";
+part "src/input.dart";
 
 /// Performs an initialization on HTML document.
 /// This is the Web Starter Kit's bootstrap method.

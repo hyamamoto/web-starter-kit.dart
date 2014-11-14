@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="packages/wsk/assets/images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="packages/wsk/assets/images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="packages/wsk/assets/images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    
+    <meta name="theme-color" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Page styles -->
+    <link rel="stylesheet" type="text/css" href="packages/wsk/assets/styles/main.css">
+
+    <style>
+      /* // [START invalidstyle] */
+      form.user-form { 
+        padding: 0.5rem 0.5rem 2rem;
+        overflow: hidden;
+      }
+      form.user-form input.dirty:not(:focus):invalid { 
+        background-color: #FFD9D9; 
+      }
+      form.user-form input.dirty:not(:focus):valid { 
+        background-color: #D9FFD9; 
+      }
+      form.user-form legend {
+        margin-top: 0.75em;
+        font-weight: bold;
+        font-size: large;
+        padding: 0;
+      }
+      form.user-form label {
+        display: block;
+        padding-bottom: 0.25rem;
+        margin: 0;
+        margin-top: 0.3em;
+        padding: 0;
+      }
+      form.user-form input {
+        width: 100%;
+        border: 1px solid gray;
+        padding: 0.5rem 0.65rem;
+        font-family: inherit;
+        font-size: 100%;
+        margin: 0;
+      }
+      form.user-form p {
+        padding-top: 0.25em;
+      }
+      form.user-form input[type="checkbox"], input[type="radio"] {
+        width: auto;
+        margin-right: 0.3em;
+      }
+      /* // [END invalidstyle] */
+    </style>
+    <title>Creating Amazing Forms: Sample order form</title>
+  </head>
+  <body>
+    <div role="main">
+      <form method="post" id="usrForm" class="user-form">
+        <fieldset>
+          <legend>Contact Info</legend>
+          <!-- // [START autocomplete] -->
+          <label for="frmNameA">Name</label>
+          <input type="text" name="name" id="frmNameA" 
+          placeholder="Full name" required autocomplete="name">
+
+          <label for="frmEmailA">Email</label>
+          <input type="email" name="email" id="frmEmailA" 
+            placeholder="name@example.com" required autocomplete="email">
+
+          <label for="frmEmailC">Confirm Email</label>
+          <input type="email" name="emailC" id="frmEmailC" 
+            placeholder="name@example.com" required autocomplete="email">
+           
+          <label for="frmPhoneNumA">Phone</label>
+          <input type="tel" name="phone" id="frmPhoneNumA" 
+            placeholder="+1-555-555-1212" required autocomplete="tel">
+          <!-- // [END autocomplete] -->
+
+          <label for="frmShoeSize">Shoe Size</label>
+          <input type="number" name="shoe-size" id="frmShoeSize" 
+            min="1" max="18" step="0.5">
+
+          <!-- // [START datalist] -->
+          <label for="frmFavChocolate">Favorite Type of Chocolate</label>
+          <input type="text" name="fav-choc" id="frmFavChocolate" list="chocType">
+          <datalist id="chocType">
+            <option value="white">
+            <option value="milk">
+            <option value="dark">
+          </datalist>
+          <!-- // [END datalist] -->
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Shipping</legend>
+          <!-- // [START labels] -->
+          <label for="frmAddressS">Address</label>
+          <input type="text" name="ship-address" required id="frmAddressS" 
+            placeholder="123 Any Street" autocomplete="shipping street-address">
+          <!-- // [END labels] -->
+           
+          <label for="frmCityS">City</label>
+          <input type="text" name="ship-city" required id="frmCityS" 
+            placeholder="New York" autocomplete="shipping locality">
+           
+          <label for="frmStateS">State</label>
+          <input type="text" name="ship-state" required id="frmStateS" 
+            placeholder="NY" autocomplete="shipping region">
+           
+          <label for="frmZipS">Zip</label>
+          <input type="text" name="ship-zip" required id="frmZipS" 
+            placeholder="10011" autocomplete="shipping postal-code">
+           
+          <label for="frmCountryS">Country</label>
+          <input type="text" name="ship-country" required id="frmCountryS" 
+            placeholder="USA" autocomplete="shipping country">
+
+          <label>
+            <input type="checkbox" name="billAndShip" id="cbBillAndShip">
+            Bill to this address.
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Billing</legend>
+        
+          <label for="frmAddressB">Address</label>
+          <input type="text" name="bill-address" id="frmAddressB" required 
+            placeholder="123 Any Street" autocomplete="billing street-address">
+           
+          <label for="frmCityB">City</label>
+          <input type="text" name="bill-city" id="frmCityB" required 
+            placeholder="New York" autocomplete="billing locality">
+           
+          <label for="frmStateB">State</label>
+          <input type="text" name="bill-state" id="frmStateB" required 
+            placeholder="NY" autocomplete="billing region">
+           
+          <label for="frmZipB">Zip</label>
+          <input type="text" name="bill-zip" id="frmZipB" required 
+            placeholder="10011" autocomplete="billing postal-code">
+           
+          <label for="frmCountryB">Country</label>
+          <input type="text" name="bill-country" id="frmCountryB" 
+            required placeholder="USA" autocomplete="billing country">
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment</legend>
+          <p>Do <b>NOT</b> provide real credit card information in this field.</p>
+          <label for="frmNameCC">Name on card</label>
+          <input type="text" name="ccname" id="frmNameCC" 
+            required placeholder="Full Name" autocomplete="cc-name">
+           
+          <label for="frmCCNum">Card Number</label>
+          <input type="text" name="cardnumber" id="frmCCNum" 
+            required autocomplete="cc-number">
+           
+          <label for="frmCCCVC">CVC</label>
+          <input type="text" name="cvc" id="frmCCCVC" required 
+            autocomplete="cc-csc">
+          
+          <label for="frmCCExp">Expiry</label>
+          <!-- // [START placeholder] -->
+          <input type="text" name="cc-exp" id="frmCCExp" required 
+            placeholder="MM-YYYY" autocomplete="cc-exp">
+          <!-- // [END placeholder] -->
+        </fieldset>
+        <div>
+          <button class="btn" id="butCheckout">Check Out</button>
+        </div>
+      </form>
+    </div>
+   
+    <script type="application/dart" src="test_input.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+
+  </body>
+</html>

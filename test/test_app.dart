@@ -1,4 +1,3 @@
-library test_app;
 
 import 'package:unittest/unittest.dart';
 import 'package:unittest/html_config.dart';
