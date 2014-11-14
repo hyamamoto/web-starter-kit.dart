@@ -29,9 +29,9 @@ void _initMenuBar() {
     return found;
   }
 
-  // 'click' for #main
+  // 'click' for main element
   if (!addClickListener('main', closeMenu)) {
-    window.console.error("material_asset: <main></main> not found");
+    window.console.error("wsk: <main></main> not found");
   }
 
   // 'click' for .menu
