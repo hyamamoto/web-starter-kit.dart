@@ -1,13 +1,13 @@
-# [Web Starter Kit　for Dart](http://github.com/hyamamoto/web-starter-kit.dart)
+# [Web Starter Kit for Dart](http://github.com/hyamamoto/web-starter-kit.dart)
 
  ( [**wsk**](https://pub.dartlang.org/packages/wsk) in pub repository )
 
-_version 0.5.1 (11/14/2014)_
+_version 0.5.1+1 (11/14/2014)_
 	
 ## Overview
 
-"Web Starter Kit　for Dart (wsk)" , 
-**Web Starter Kit　for Dart ( wsk )** is a asset/template/util pack for Dart pub repository. It's made for kick-starting a Dart project for [Web Starter Kit](http://developers.google.com/web/starter-kit) without a hussle.
+"Web Starter Kit for Dart (wsk)" , 
+**Web Starter Kit for Dart ( wsk )** is a asset/template/util pack for Dart pub repository. It's made for kick-starting a Dart project for [Web Starter Kit](http://developers.google.com/web/starter-kit) without a hussle.
 
 ## Quick Start
 
@@ -47,7 +47,7 @@ Then, you'll see the working web page on your browser. ( [Live Demo](http://free
 
 ## Package structure
 
-<pre>
+```
     packages
     └── wsk
         ├── assets
@@ -73,7 +73,7 @@ Then, you'll see the working web page on your browser. ( [Live Demo](http://free
         ├── routing_utils.dart
         ├── transformer.dart
         └── wsk.dart
-</pre>
+```
 
 #### `wsk/assets` directory 
 
