@@ -1,17 +1,17 @@
 name: wsk
-version: 0.5.1
+version: 0.5.1+1
 authors:
 - Google team
 - Hiroshi Yamamoto <higon@freepress.jp>
-description: A light-weight asset/template pack for Google's Web Starter Kit. \r\nThis includes pre-compiled resources, auxiliary methods, and a project template.
+description: A light-weight asset/template/util pack for Google Web Starter Kit.
 homepage: https://github.com/hyamamoto/web-starter-kit.dart
 environment:
   sdk: '>=1.2.0'
-documentation: https://github.com/hyamamoto/web-starter-kit.dart
+documentation: https://github.com/hyamamoto/web-starter-kit.dart/blob/master/README.md
 dependencies:
-  barback: any
-  browser: any
-  route_hierarchical: any
+  barback: '>=0.10.0 <0.16.0'
+  browser: '>=0.8.0 <0.11.0'
   html5lib: '>=0.8.9 <0.13.0'
+  route_hierarchical: '>=0.5.1 <0.7.0'
 dev_dependencies:
   unittest: '>=0.6.0 <0.12.0'

@@ -17,14 +17,14 @@ Within the Dart Editor...
 2. Open `pubspec.yaml` and add **wsk** package. Save it.
 3. Select `Tools > Pub Get` from the application menu.
 4. Copy 2 directories inside `{project_dir}/packages/wsk/templates` to your project root.
-   This can be done by a simple drag & drop.
+   This can be done by a simple drag & drop with a `Ctrl` or `Option` key pressed.
 5. Right-click `{project_dir}/web/index.html`. Select `Run in Dartium`.
 
 Then, you'll see the working web page on your browser. ( [Live Demo](http://freepress.jp/dev/web-starter-kit.dart/index.html) )
 
 
-## Features 
-
+## Features
+ 
 #### What **wsk** package provides...
 
 * Pre-built static resources from Web Starter Kit
@@ -48,31 +48,31 @@ Then, you'll see the working web page on your browser. ( [Live Demo](http://free
 ## Package structure
 
 <pre>
-packages
-└── wsk
-    ├── assets
-    │   ├── fonts
-    │   ├── images
-    │   ├── scripts
-    │   └── styles
-    │       ├── components.css
-    │       ├── components.min.css
-    │       ├── main.css
-    │       └── main.min.css
-    ├── sass
-    │   ├── components
-    │   │   └── components.scss
-    │   └── main.scss
-    ├── templates
-    │   ├── tests
-    │   └── web
-    │       ├── index.dart
-    │       ├── index.html
-    │       ├── styleguide.dart
-    │       └── styleguide.html
-    ├── routing_utils.dart
-    ├── transformer.dart
-    └── wsk.dart
+    packages
+    └── wsk
+        ├── assets
+        │   ├── fonts
+        │   ├── images
+        │   ├── scripts
+        │   └── styles
+        │       ├── components.css
+        │       ├── components.min.css
+        │       ├── main.css
+        │       └── main.min.css
+        ├── sass
+        │   ├── components
+        │   │   └── components.scss
+        │   └── main.scss
+        ├── templates
+        │   ├── tests
+        │   └── web
+        │       ├── index.dart
+        │       ├── index.html
+        │       ├── styleguide.dart
+        │       └── styleguide.html
+        ├── routing_utils.dart
+        ├── transformer.dart
+        └── wsk.dart
 </pre>
 
 #### `wsk/assets` directory 
@@ -107,7 +107,7 @@ dependency to your application:
 **wsk** package has a transformer to modify an asset path for release build.
 This way asset files can be placed on any servers.
 
-Read [docs/transformer.md](docs/transformer.md) for more detail.
+Read [doc/transformer.md](doc/transformer.md) for more detail.
 
 
 ## Change Logs
