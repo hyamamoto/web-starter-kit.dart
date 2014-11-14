@@ -8,7 +8,7 @@ packages:
   barback:
     description: barback
     source: hosted
-    version: "0.14.2"
+    version: "0.15.2+2"
   browser:
     description: browser
     source: hosted
@@ -16,7 +16,7 @@ packages:
   collection:
     description: collection
     source: hosted
-    version: "0.9.4"
+    version: "1.1.0"
   csslib:
     description: csslib
     source: hosted
@@ -24,7 +24,7 @@ packages:
   html5lib:
     description: html5lib
     source: hosted
-    version: "0.11.0+2"
+    version: "0.12.0"
   logging:
     description: logging
     source: hosted
@@ -45,10 +45,6 @@ packages:
     description: route_hierarchical
     source: hosted
     version: "0.6.1"
-  source_maps:
-    description: source_maps
-    source: hosted
-    version: "0.9.4"
   source_span:
     description: source_span
     source: hosted
@@ -56,7 +52,7 @@ packages:
   stack_trace:
     description: stack_trace
     source: hosted
-    version: "1.0.2"
+    version: "1.1.1"
   unittest:
     description: unittest
     source: hosted

@@ -20,7 +20,7 @@ Within the Dart Editor...
    This can be done by a simple drag & drop.
 5. Right-click `{project_dir}/web/index.html`. Select `Run in Dartium`.
 
-Then, you'll see the working web page on your browser!
+Then, you'll see the working web page on your browser. ( [Live Demo](http://freepress.jp/dev/web-starter-kit.dart/index.html) )
 
 
 ## Features 
@@ -123,9 +123,8 @@ Read [docs/transformer.md](docs/transformer.md) for more detail.
 
 ## Learn more
 
+* [Web Starter Kit for Dart Live Demo](http://freepress.jp/dev/web-starter-kit.dart/index.html)
 * [Web Starter Kit](http://developers.google.com/web/starter-kit)  (Beta) on Google Developers
 * [Web Starter Kit](https://github.com/google/web-starter-kit) on Github 
 * [Sass](http://sass-lang.com/)
 * [**Sass** package](https://pub.dartlang.org/packages/sass) on Pub reopsitory
-
-
