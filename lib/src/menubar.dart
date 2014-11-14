@@ -2,8 +2,8 @@ part of wsk;
 
 void _initMenuBar() {
   final query = document.querySelector;
-  final removeOpen = (Element e) => e != null ? e.classes.remove('open'): false;
-  final toggleOpen = (Element e) => e != null ? e.classes.toggle('open'): false;
+  final removeOpen = (Element e) => e != null ? e.classes.remove('open') : false;
+  final toggleOpen = (Element e) => e != null ? e.classes.toggle('open') : false;
 
   Element navdrawerContainer = query('.navdrawer-container');
   Element body = document.body;
@@ -19,26 +19,24 @@ void _initMenuBar() {
     toggleOpen(body);
     toggleOpen(appbarElement);
     toggleOpen(navdrawerContainer);
-    if (navdrawerContainer != null)
-      navdrawerContainer.classes.add('opened');
+    if (navdrawerContainer != null) navdrawerContainer.classes.add('opened');
   }
 
   bool addClickListener(String name, EventListener l) {
     final Element elem = query(name);
     final bool found = elem != null;
-    if (found)
-      elem.addEventListener('click', l);
+    if (found) elem.addEventListener('click', l);
     return found;
   }
 
   // 'click' for #main
-  if (!addClickListener('main', closeMenu)){
+  if (!addClickListener('main', closeMenu)) {
     window.console.error("material_asset: <main></main> not found");
   }
 
   // 'click' for .menu
   addClickListener('.menu', toggleMenu);
-  
+
   // 'click' for .navdrawer-container
   addClickListener('.navdrawer-container', (event) {
     if (event.target.nodeName == 'A' || event.target.nodeName == 'LI') {

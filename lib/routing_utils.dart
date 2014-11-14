@@ -14,9 +14,9 @@ import 'package:route_hierarchical/client.dart';
 ///         "/about": "#about",
 ///     };
 ///     newRouter(url_to_id_map).listen();
-///     
+///
 /// Corresponding HTML (Menu):
-/// 
+///
 ///     <ul>
 ///       <li><a href="#/welcome">Welcome</a></li>
 ///       <li><a href="#/home">Home</a></li>
@@ -25,7 +25,7 @@ import 'package:route_hierarchical/client.dart';
 ///     </ul>
 ///
 /// Corresponding HTML (Contents):
-/// 
+///
 ///     <div id="welcome">
 ///         Welcome Content
 ///     </div>
@@ -38,8 +38,7 @@ import 'package:route_hierarchical/client.dart';
 Router newRouter([Map<String, String> url_to_elementId_map]) {
   final switchContent = newSwitchContentHandler(url_to_elementId_map);
   final router = new Router(useFragment: true); // With URL hashes.
-  if (url_to_elementId_map != null) 
-    url_to_elementId_map.forEach((k, v) => router.root.addRoute(name: k, path: k, enter: switchContent));
+  if (url_to_elementId_map != null) url_to_elementId_map.forEach((k, v) => router.root.addRoute(name: k, path: k, enter: switchContent));
   return router;
 }
 
@@ -59,7 +58,7 @@ bool switchContentByUrl(Map<String, String> url_to_id_map, String url) {
   return hasURL;
 }
 
-/// Creates new [RouteEnterEventHandler] which reveals a content by changing visibility of all contents.
+/// Creates new [RouteEnterEventHandler] which reveals a content by changing visibility of all the other contents.
 RouteEnterEventHandler newSwitchContentHandler(Map<String, String> url_to_id_map, [url]) {
   return (RouteEvent e) {
     switchContentByUrl(url_to_id_map, url != null ? url : e.path);

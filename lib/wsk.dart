@@ -25,4 +25,3 @@ part "src/menubar.dart";
 void initWebStarterKit() {
   _initMenuBar();
 }
-
