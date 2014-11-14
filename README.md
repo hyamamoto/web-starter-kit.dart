@@ -1,12 +1,11 @@
 # [Web Starter Kit for Dart](http://github.com/hyamamoto/web-starter-kit.dart)
 
- ( [**wsk**](https://pub.dartlang.org/packages/wsk) in pub repository )
+ ( [**wsk**](https://pub.dartlang.org/packages/wsk) in Pub repository )
 
-_version 0.5.1+1 (11/14/2014)_
+_version 0.5.2 (11/14/2014)_
 	
 ## Overview
 
-"Web Starter Kit for Dart (wsk)" , 
 **Web Starter Kit for Dart ( wsk )** is a asset/template/util pack for Dart pub repository. It's made for kick-starting a Dart project for [Web Starter Kit](http://developers.google.com/web/starter-kit) without a hussle.
 
 ## Quick Start
@@ -112,11 +111,11 @@ Read [doc/transformer.md](doc/transformer.md) for more detail.
 
 ## Change Logs
 
-**0.5.2**
+**0.5.2 (11/14/2014)**
 * Renamed `apple-touch-icon-precomposed.png` to `apple-touch-icon.png`.
 * Added `meta-theme-color` to `index.html`
 
-**0.5.1+1(11/14/2014)**  
+**0.5.1+1**  
 * Initial version.
 
 
@@ -127,8 +126,9 @@ Read [doc/transformer.md](doc/transformer.md) for more detail.
 
 ## Learn more
 
+* [Web Starter Kit for Dart](https://pub.dartlang.org/packages/wsk) on Pub repository
 * [Web Starter Kit for Dart Live Demo](http://freepress.jp/dev/web-starter-kit.dart/index.html)
-* [Web Starter Kit](http://developers.google.com/web/starter-kit)  (Beta) on Google Developers
+* [Web Starter Kit Documentation](http://developers.google.com/web/starter-kit) on Google Developers
 * [Web Starter Kit](https://github.com/google/web-starter-kit) on Github 
 * [Sass](http://sass-lang.com/)
-* [**Sass** package](https://pub.dartlang.org/packages/sass) on Pub reopsitory
+* [Sass package](https://pub.dartlang.org/packages/sass) on Pub reopsitory
