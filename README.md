@@ -112,7 +112,11 @@ Read [doc/transformer.md](doc/transformer.md) for more detail.
 
 ## Change Logs
 
-**0.5.1+1 (11/14/2014)**  
+**0.5.2**
+* Renamed `apple-touch-icon-precomposed.png` to `apple-touch-icon.png`.
+* Added `meta-theme-color` to `index.html`
+
+**0.5.1+1(11/14/2014)**  
 * Initial version.
 
 
