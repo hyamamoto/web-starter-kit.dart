@@ -6,7 +6,7 @@ import 'package:barback/barback.dart'
   show Asset, Transform, Transformer, BarbackSettings, BarbackMode;
 import 'dart:async' show Future;
 
-/// A [Transformer] for Web Starter Kit (wsk).
+/// A [Transformer] for Web Starter Kit for Dart (wsk).
 /// 
 /// The transformer will automatically rewrite the URI to point to the minified 
 /// versions when pub is invoked in release mode.
@@ -15,7 +15,7 @@ import 'dart:async' show Future;
 ///
 ///     transformers:
 ///     - wsk:
-///         url: //cache.cloudfront.com/wsk/{{version}}
+///         url: //cache.frontend.com/wsk/{{version}}
 ///         version: 1.0.0
 /// 
 /// The transformer takes up to two optional parameters:
