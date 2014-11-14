@@ -112,7 +112,7 @@ Read [doc/transformer.md](doc/transformer.md) for more detail.
 
 ## Change Logs
 
-**0.5.1 (11/13/2014)**  
+**0.5.1+1 (11/14/2014)**  
 * Initial version.
 
 
